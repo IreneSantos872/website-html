@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Principal</title>
+    <style>
+        span{
+            color: red
+        }
+    </style>
+</head>
+<body>
+    <h1 id="inicio">HTML</h1>
+    <hr />
+    <h2>Índice</h2>
+    <ul>
+        <li><a href="#html">Definição e estrutura básica Html</a></li>
+        <li><a href="#semantica">Semântica</a></li>
+        <li><a href="#textos">Textos e links</a></li>
+        <li><a href="#imagens">Imagens</a></li>
+        <li><a href="#listas">Listas</a></li>
+    </ul>
+
+    <h2 id="html">Definição e estrutura básica Html </h2>
+    <small><a href="#inicio">Voltar</a></small>
+    <p>
+        Com o HTML definimos o significado e a estrutura do conteúdo da web e, além de texto, nossas páginas precisam de imagens, vídeos e vários outros formatos e para isso temos os elementos <span>HTML</span>.
+        Um elemento <span>HTML</span> é formado pela tag de abertura e seus atributos, o conteúdo e uma tag de fechamento. E mais a frente veremos que existem elementos que não tem tag de fechamento.
+        Com esses elementos podemos agrupar tipos de conteúdo, alterar tamanho e forma de fontes e adicionar diferentes mídias ao nossa página na web.
+
+    </p>
+    <p>
+        <h3 class="post_title">html</h3> 
+        <blockquote>
+            <p>A tag html é a raiz do seu documento, todos os elementos <span>HTML</span> devem estar dentro dela. E nela nós informamos ao navegador qual é o idioma desse nosso documento, através do atributo lang, para o português brasileiro usamos pt-BR.</p>  
+        </blockquote> 
+        <h3 class="post_title">head </h3> 
+        <blockquote>
+        <p> A tag head contém elementos que serão lidos pelo navegador, como os metadados - um exemplo é o charset, que é a codificação de caracteres e a mais comum é a UTF-8, o JavaScript com a tag script, o CSS através das tags style e link - veremos a diferença quando falarmos sobre CSS - e o título da página com a tag title.</p>
+        </blockquote>
+        <h3 class="post_title">body </h3>   
+        <blockquote>
+        <p> E dentro da tag body colocamos todo o conteúdo visível ao usuário: textos, imagens, vídeos.</p>
+        </blockquote>
+    </p>
+
+    <h2 id="semantica">Semântica</h2>
+    <small><a href="#inicio"><strong>Voltar</strong></a></small>
+        <p>
+        A semântica nos permite descrever mais precisamente o nosso conteúdo. E temos vários elementos para ressignificar as divs:</p>
+        
+        <h3 class="post_title">section</h3>
+        <blockquote>
+        <p>
+        Representa uma seção genérica de conteúdo quando não houver um elemento mais específico para isso.
+        </p>  </blockquote>
+        
+        <h3 class="post_title">header</h3>
+        <blockquote><p>
+            É o cabeçalho da página ou de uma seção da página e normalmente contém logotipos, menus, campos de busca.
+        </p></blockquote>
+         <p>
+
+        <h3 class="post_title">h1-h6</h3> 
+        <blockquote>
+        <p>Eles não foram criados na versão 5 do <span>HTML</span> e nem são específicos para semântica, mas servem para esse propósito. São utilizados para marcar a importância dos títulos, sendo <mark>"h1"</mark> o mais importante e <mark>"h6"</mark> o menos. Uma dica: use apenas um  <mark>"h1"</mark> por página, pois ele representa o objetivo da sua página. </p> 
+        </blockquote>
+
+        <h3 class="post_title"> footer</h3> 
+        <blockquote>
+        <p> Esse elemento representa o rodapé do conteúdo ou de parte dele, pois ele é aceito dentro de vários elementos, como article e section e até do body. Exemplos de conteúdo de um <mark>"footer"</mark> são informações de autor e links relacionados.</p>
+        </blockquote>
+  
+    
+    <h2 id="textos">Textos e links </h2>
+    <small><a href="#inicio">Voltar</a></small>
+    <p>
+        A criação do <span>HTML</span> foi motivada pela necessidade de compartilhar textos e documentos, e mesmo depois de quase 30 anos, com toda a evolução da web, isso ainda representa uma boa parte do conteúdo da web.
+        Já falamos anteriormente sobre os elementos h1-h6 e, eles são essenciais para nos indicar visualmente a importância e localização de seções de texto na página, mas para textos maiores e mais densos usamos o elemento p.
+        O <mark>"p"</mark> representa um parágrafo, mas ele não suporta apenas texto, podemos adicionar imagens, código, vídeos e vários outros tipos de conteúdo dentro dele.
+        Um outro elemento interessante e extremamente necessário na web é o <mark>"a"</mark> - que significa anchor/âncora, ele representa um hyperlink, é ele que interliga vários conteúdos e páginas na web.
+        O elemento a tem vários atributos, mas vamos focar em dois, o href e o target.
+        O <mark>"href"</mark> representa o hyperlink para onde sua âncora aponta, pode ser uma página do seu ou de outro site, um e-mail e até mesmo um telefone, os dois últimos precisam dos prefixos mailto: e tel:, respectivamente.
+        O target neste momento vai servir para nos ajudar a abrir nossos links em outra aba do navegador usando o valor _blank.
+
+    </p>
+
+    <h2 id="imagens">Imagens </h2>
+    <small><a href="#inicio">Voltar</a></small>
+
+    <p>
+    A web também é feita de imagens e para representá-las temos o elemento <mark>"img"</mark>, ele é um daqueles elementos sem tag de fechamento.
+    O elemento img é bem simples, contendo apenas 2 atributos próprios, o src e o alt.
+    <blockquote>O src é obrigatório e guarda o caminho para a imagem que você quer mostrar na página.</blockquote>
+    <blockquote>O alt não é obrigatório mas é altamente recomendado por melhorar a acessibilidade, ele mostra a descrição da imagem caso ela não carregue e leitores de tela usam esse atributo para descrever a imagem para o usuário saber o que ela significa.</blockquote></p>
+
+    <h2 id="listas">Listas</h2>
+    <small><a href="#inicio">Voltar</a></small>
+     <p>Os últimos elementos que veremos neste módulo são os relacionados a listas: <mark>"ul, ol e li"</mark> .
+        Listas servem para agrupar uma coleção de itens, como uma lista de ingredientes ou, como será no nosso caso, uma lista com contatos.
+        O elemento <mark>"ul"</mark> cria uma lista não ordenada, onde a ordem dos elementos não é importante, e é representada com pontos, círculos ou quadrados.
+        O <mark>"ol"</mark>serve para criar lista ordenadas, nessas a ordem importa, portanto elas são representadas com números, algarismos romanos ou letras.
+        E o elemento li é um item dentro de uma dessas listas. Um <mark>"li"</mark> pode conter vários tipos de conteúdos, como parágrafos, imagens e até outras listas.
+     </p>
+     <p><strong>Exemplo ul:</strong></p>
+  
+        <div id="links">
+            <ul>
+                <li>Link 1</li>
+                <li>Link 2</li>
+                <li>Link 3</li>
+            </ul>
+
+        </div>
+
+        <p><strong>Exemplo ol:</strong></p>
+        <div id="links">
+            <ol>
+                <li>Link 1</li>
+                <li>Link 2</li>
+                <li>Link 3</li>
+            </ol>
+
+        </div>
+    </body>
+
+</html>
